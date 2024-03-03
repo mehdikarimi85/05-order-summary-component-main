@@ -1,0 +1,124 @@
+:root {
+  --Primary-Pale-blue: hsl(225, 100%, 94%);
+  --Primary-Bright-blue: hsl(245, 75%, 52%);
+  --Neutral-Very-pale-blue: hsl(225, 100%, 98%);
+  --Neutral-Desaturated-blue: hsl(224, 23%, 55%);
+  --Neutral-Dark-blue: hsl(223, 47%, 23%);
+  --text-color: hsl(224, 12%, 63%);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Primary-Pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+ul,
+li {
+  list-style: none;
+}
+/* .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
+} */
+.card-container {
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.card-container .hero img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  display: block;
+}
+section.order-summary {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 2.5rem;
+  border-radius: 0 0 1rem 1rem;
+}
+.order-summary h1 {
+  font-weight: 900;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: var(--Neutral-Dark-blue);
+}
+.order-summary p {
+  text-align: center;
+  padding: 1rem;
+  font-weight: 900;
+  color: var(--text-color);
+  line-height: 1.5rem;
+}
+section .annual-plan {
+  display: flex;
+  width: 100%;
+  background-color: hsl(230, 75%, 98%);
+  padding: 1.5rem;
+  border-radius: 6px;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.annual-plan img {
+  margin-right: 1rem;
+  /* align-items: center; */
+  display: inline-flex;
+}
+.annual-plan ul {
+  /* margin-left: -4.5rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.annual-plan ul li:first-child {
+  font-weight: 900;
+  color: var(--Neutral-Dark-blue);
+}
+.annual-plan ul li:last-child {
+  color: var(--text-color);
+  font-weight: 500;
+}
+.annual-plan a {
+  color: var(--Primary-Bright-blue);
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+.btn {
+  border: none;
+  width: 100%;
+  padding: 1rem 0;
+  color: hsl(246, 83%, 95%);
+  background-color: var(--Primary-Bright-blue);
+  font-weight: 900;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+section div:last-child {
+  font-weight: 700;
+  color: var(--text-color);
+}
+.mehdi {
+  width: calc(100px * sin(45deg));
+}
+.attribution {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
